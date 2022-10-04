@@ -11,5 +11,10 @@ sleep 5
 
 solana --version
 sleep 5
+mkdir /root/solana
+cd /root/solana/
+solana-keygen new -o /root/solana/validator_keypair.json
+
+cat /root/solana/validator_keypair.json
 
 sleep infinity
