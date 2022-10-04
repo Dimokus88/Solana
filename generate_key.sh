@@ -6,7 +6,7 @@ sleep 5
 runsvdir -P /etc/service &
 
 sh -c "$(curl -sSfL https://release.solana.com/v1.14.3/install)"
-
+export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 sleep 5
 
 solana --version
