@@ -13,7 +13,7 @@ solana --version
 sleep 5
 mkdir /root/solana
 cd /root/solana/
-solana-keygen new -o /root/solana/validator_keypair.json
+solana-keygen new -o /root/solana/validator_keypair.json --no-bip39-passphrase
 
 cat /root/solana/validator_keypair.json
 
